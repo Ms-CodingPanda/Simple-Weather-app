@@ -1,15 +1,14 @@
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
-  hours = hours % 12 || 12;
-  if (hours < 10) {
-    hours = `0${hours}`;
-  }
+  hours = hours % 12;
+  hours = hours ? hours : 12;
   let minuites = date.getMinutes();
   if (minuites < 10) {
     minuites = `0${minuites}`;
   }
-  let AmOrPm = hours >= 12 ? "am" : "pm";
+  let ampm = hours >= 12 ? "pm" : "am";
+
   let days = [
     "Sunday",
     "Monday",
@@ -20,7 +19,7 @@ function formatDate(timestamp) {
     "Saturday",
   ];
   let day = days[date.getDay()];
-  return `${day} ${hours}:${minuites} ${AmOrPm}`;
+  return `${day} ${hours}:${minuites} ${ampm}`;
 }
 
 function displayTemperature(response) {
