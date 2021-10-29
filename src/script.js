@@ -9,7 +9,7 @@ function formatDate(timestamp) {
   if (minuites < 10) {
     minuites = `0${minuites}`;
   }
-  let AmOrPm = hours >= 12 ? "pm" : "am";
+  let AmOrPm = hours >= 12 ? "am" : "pm";
   let days = [
     "Sunday",
     "Monday",
