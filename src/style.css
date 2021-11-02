@@ -101,6 +101,21 @@ small {
   font-size: 25px;
 }
 
+.weather-forecast {
+  margin-top: 30px;
+  text-align: center;
+  color: black;
+}
+
+.weather-forecast-date {
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.6;
+}
+
 .codeLink {
   color: gray;
 }
