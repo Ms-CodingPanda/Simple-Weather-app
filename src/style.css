@@ -40,6 +40,9 @@ a {
   text-decoration: none;
   color: rgb(116, 116, 66);
 }
+img {
+  margin-left: -20px;
+}
 small {
   color: white;
   text-shadow: yellow 1px 0 10px;
